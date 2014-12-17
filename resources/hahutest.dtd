@@ -1,0 +1,26 @@
+<!--
+
+-->
+<!ELEMENT suite ((package|classe)*, scenario+) >
+<!ATTLIST suite
+	name CDATA #REQUIRED
+>
+
+<!ELEMENT package (#PCDATA) >
+
+<!ELEMENT class (#PCDATA) >
+
+<!ELEMENT scenario ((package|class)*, method+) >
+<!ATTLIST scenario
+	name CDATA #REQUIRED
+>
+
+<!ELEMENT method (class*, parameter*) >
+<!ATTLIST method
+	name CDATA #REQUIRED
+>
+
+<!ELEMENT parameter (#PCDATA) >
+<!ATTLIST parameter
+	name CDATA #REQUIRED
+>

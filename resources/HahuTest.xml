@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "hahutest.dtd" >
+<suite name="first hahu test">
+	<package>com.hahutest.tmptest</package>
+	<package>com.hahutest</package>
+	<class>com.hahutest.tmptest.TmpTest</class>
+	<class>com.hahutest.tmptest.XMLTest</class>
+	<scenario name="my scenario">
+		<package>com.hahutest</package>
+		<class>com.hahutest.tmptest.TmpTest</class>
+		<method name="testhahu">
+			<parameter name="p1" value="v1" />
+			<parameter name="p2" value="v2" />
+		</method>
+		<method name="testhahu1">
+			<parameter name="p3" value="v5" />
+			<parameter name="p2" value="v2" />
+		</method>
+	</scenario>
+	<scenario name="my scenario2">
+		<method name="testhahu3">
+			<class>com.hahutest.xml.XMLMethod</class>
+			<parameter name="p1" value="v1" />
+			<parameter name="p2" value="v2" />
+		</method>
+	</scenario>
+</suite>
