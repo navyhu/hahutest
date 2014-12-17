@@ -2,6 +2,8 @@ package com.hahutest.testcontainer;
 
 import java.util.ArrayList;
 
+import com.hahutest.xml.XMLTestScenario;
+
 public interface ITestScenario {
 	public void setTestClasses(ArrayList<Class<?>> testClasses);
 	public ArrayList<Class<?>> getTestClasses();
@@ -17,4 +19,7 @@ public interface ITestScenario {
 	
 	public void setTestSuite(ITestSuite testSuite);
 	public ITestSuite getTestSuite();
+	
+	public void setXMLTestScenario(XMLTestScenario xmlTestScenario);
+	public XMLTestScenario getXMLTestScenario();
 }

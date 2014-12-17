@@ -2,6 +2,8 @@ package com.hahutest.testcontainer;
 
 import java.util.ArrayList;
 
+import com.hahutest.xml.XMLTestScenario;
+
 public class HahuTestScenario extends BaseTestScenario implements ITestScenario {
 	@Override
 	public void setTestClasses(ArrayList<Class<?>> testClasses) {
@@ -51,5 +53,15 @@ public class HahuTestScenario extends BaseTestScenario implements ITestScenario 
 	@Override
 	public ITestSuite getTestSuite() {
 		return mTestSuite;
+	}
+	
+	@Override
+	public void setXMLTestScenario(XMLTestScenario xmlTestScenario) {
+		mXMLTestScenario = xmlTestScenario;
+	}
+	
+	@Override
+	public XMLTestScenario getXMLTestScenario() {
+		return mXMLTestScenario;
 	}
 }

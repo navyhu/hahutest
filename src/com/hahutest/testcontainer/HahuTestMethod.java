@@ -5,6 +5,8 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Map;
 
+import com.hahutest.xml.XMLTestMethod;
+
 public class HahuTestMethod extends BaseTestMethod implements ITestMethod {
 	@Override
 	public void setTestClass(Class<?> testClass) {
@@ -78,5 +80,15 @@ public class HahuTestMethod extends BaseTestMethod implements ITestMethod {
 	@Override
 	public ITestScenario getTestScenario() {
 		return mTestScenario;
+	}
+	
+	@Override
+	public void setXMLTestMethod(XMLTestMethod xmlTestMethod) {
+		mXMLTestMethod = xmlTestMethod;
+	}
+	
+	@Override
+	public XMLTestMethod getXMLTestMethod() {
+		return mXMLTestMethod;
 	}
 }
