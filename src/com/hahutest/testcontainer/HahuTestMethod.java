@@ -49,4 +49,34 @@ public class HahuTestMethod extends BaseTestMethod implements ITestMethod {
 		}
 		
 	}
+	
+	@Override
+	public Class<?> getTestClass() {
+		return mTestClass;
+	}
+	
+	@Override
+	public Method getTestMethod() {
+		return mTestMethod;
+	}
+	
+	@Override
+	public Map<String, String> getMethodParameters() {
+		return mParameters;
+	}
+	
+	@Override
+	public ArrayList<String> getMethodParameterValues() {
+		return mParameterValues;
+	}
+	
+	@Override
+	public void setTestScenario(HahuTestScenario testScenario) {
+		mTestScenario = testScenario;
+	}
+	
+	@Override
+	public ITestScenario getTestScenario() {
+		return mTestScenario;
+	}
 }
