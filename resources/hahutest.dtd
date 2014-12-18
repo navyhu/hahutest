@@ -6,7 +6,10 @@
 	name CDATA #REQUIRED
 >
 
-<!ELEMENT package (#PCDATA) >
+<!ELEMENT package (method+) >
+<!ATTLIST package
+	name CDATA #REQUIRED
+>
 
 <!ELEMENT class (#PCDATA) >
 
