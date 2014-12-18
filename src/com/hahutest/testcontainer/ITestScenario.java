@@ -14,8 +14,8 @@ public interface ITestScenario {
 	public void setTestScenarioName(String testSenarioName);
 	public String getTestSenarioName();
 	
-	public void setTestMethods(ArrayList<ITestMethod> testMethods);
-	public ArrayList<ITestMethod> getTestMethods();
+	public void setTestMethods(ArrayList<? extends ITestMethod> testMethods);
+	public ArrayList<? extends ITestMethod> getTestMethods();
 	
 	public void setTestSuite(ITestSuite testSuite);
 	public ITestSuite getTestSuite();

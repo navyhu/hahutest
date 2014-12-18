@@ -36,12 +36,12 @@ public class HahuTestScenario extends BaseTestScenario implements ITestScenario 
 	}
 	
 	@Override
-	public void setTestMethods(ArrayList<ITestMethod> testMethods) {
+	public void setTestMethods(ArrayList<? extends ITestMethod> testMethods) {
 		mTestMethods = testMethods;
 	}
 	
 	@Override
-	public ArrayList<ITestMethod> getTestMethods() {
+	public ArrayList<? extends ITestMethod> getTestMethods() {
 		return mTestMethods;
 	}
 	

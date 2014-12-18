@@ -36,12 +36,12 @@ public class HahuTestSuite extends BaseTestSuite implements ITestSuite {
 	}
 	
 	@Override
-	public void setTestScenarios(ArrayList<ITestScenario> testScenarios) {
+	public void setTestScenarios(ArrayList<? extends ITestScenario> testScenarios) {
 		mTestScenarios = testScenarios;
 	}
 	
 	@Override
-	public ArrayList<ITestScenario> getTestScenarios() {
+	public ArrayList<? extends ITestScenario> getTestScenarios() {
 		return mTestScenarios;
 	}
 	

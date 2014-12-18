@@ -14,8 +14,8 @@ public interface ITestSuite {
 	public void setTestSuiteName(String testSuiteName);
 	public String getTestSuiteName();
 	
-	public void setTestScenarios(ArrayList<ITestScenario> testScenarios);
-	public ArrayList<ITestScenario> getTestScenarios();
+	public void setTestScenarios(ArrayList<? extends ITestScenario> testScenarios);
+	public ArrayList<? extends ITestScenario> getTestScenarios();
 	
 	public void setXMLTestSuite(XMLTestSuite xmlTestSuite);
 	public XMLTestSuite getXMLTestSuite();
