@@ -21,9 +21,12 @@ public interface ITestMethod {
 	
 	public void invokeTestMethod();
 	
-	public void setTestScenario(HahuTestScenario testScenario);
+	public void setTestScenario(ITestScenario testScenario);
 	public ITestScenario getTestScenario();
 	
 	public void setXMLTestMethod(XMLTestMethod xmlTestMethod);
 	public XMLTestMethod getXMLTestMethod();
+	
+	public void setTestMethodName(String testMethodName);
+	public String getTestMethodName();
 }

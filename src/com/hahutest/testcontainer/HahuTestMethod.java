@@ -73,7 +73,7 @@ public class HahuTestMethod extends BaseTestMethod implements ITestMethod {
 	}
 	
 	@Override
-	public void setTestScenario(HahuTestScenario testScenario) {
+	public void setTestScenario(ITestScenario testScenario) {
 		mTestScenario = testScenario;
 	}
 	
@@ -90,5 +90,15 @@ public class HahuTestMethod extends BaseTestMethod implements ITestMethod {
 	@Override
 	public XMLTestMethod getXMLTestMethod() {
 		return mXMLTestMethod;
+	}
+	
+	@Override
+	public void setTestMethodName(String testMethodName) {
+		mTestMethodName = testMethodName;
+	}
+	
+	@Override
+	public String getTestMethodName() {
+		return mTestMethodName;
 	}
 }

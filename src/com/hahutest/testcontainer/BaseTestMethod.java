@@ -9,6 +9,7 @@ import com.hahutest.xml.XMLTestMethod;
 public abstract class BaseTestMethod {
 	protected Class<?> mTestClass;
 	protected Method mTestMethod;
+	protected String mTestMethodName;
 	protected Map<String, String> mParameters;
 	protected ArrayList<String> mParameterValues = null;
 	protected ArrayList<String> mParameterNames;
